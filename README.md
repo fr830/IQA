@@ -7,5 +7,5 @@
 cv2.Laplacian(image, cv2.CV_64F).var()
 
 实现效果
-![image](http://github.com/iAmBrid/IQA/raw/master/image/readme/caopin.jpg)
+![image](https://github.com/iAmBrid/IQA/blob/master/image/readme/caopin.jpg)
 
