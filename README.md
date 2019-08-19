@@ -8,13 +8,13 @@ cv2.Laplacian(image, cv2.CV_64F).var()
 
 实现效果
 清晰图片
+<img src="https://github.com/iAmBrid/IQA/blob/master/image/readme/caopin.jpg">
+<img src="https://github.com/iAmBrid/IQA/blob/master/image/readme/caopin2.jpg">
+<img src="https://github.com/iAmBrid/IQA/blob/master/image/readme/lena.jpg" width='256' hegith='256'>
+<img src="https://github.com/iAmBrid/IQA/blob/master/image/readme/lena2.jpg" width='256' hegith='256'>
 
-![image](https://github.com/iAmBrid/IQA/blob/master/image/readme/caopin.jpg)
-![image](https://github.com/iAmBrid/IQA/blob/master/image/readme/caopin2.jpg)
-
-![image](https://github.com/iAmBrid/IQA/blob/master/image/readme/lena.jpg)
-![image](https://github.com/iAmBrid/IQA/blob/master/image/readme/lena2.jpg)
 模糊图片
+
 ![image](https://github.com/iAmBrid/IQA/blob/master/image/readme/person.jpg)
 ![image](https://github.com/iAmBrid/IQA/blob/master/image/readme/person2.jpg)
 
