@@ -17,7 +17,9 @@ cv2.Laplacian(image, cv2.CV_64F).var()
 <img src="https://github.com/iAmBrid/IQA/blob/master/image/readme/lena2.jpg" width='256' hegith='256'>
 
 模糊图片
+
 <img src="https://github.com/iAmBrid/IQA/blob/master/image/readme/person.jpg">
+
 <img src="https://github.com/iAmBrid/IQA/blob/master/image/readme/person2.jpg">
 
 <img src="https://github.com/iAmBrid/IQA/blob/master/image/readme/run.jpg" width='300'>
