@@ -9,7 +9,7 @@ def variance_of_laplacian(image):
     return cv2.Laplacian(image, cv2.CV_64F).var()
 
 
-# construct the argument parse and parse the arguments
+# 接受程序参数
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--images", required=True,
                 help="path to input directory of images")
@@ -17,18 +17,15 @@ ap.add_argument("-t", "--threshold", type=float, default=100.0,
                 help="focus measures that fall below this value will be considered 'blurry'")
 args = vars(ap.parse_args())
 
-# loop over the input images
+# 遍历文件夹中的图片
 for imagePath in paths.list_images(args["images"]):
-    # load the image, convert it to grayscale, and compute the
-    # focus measure of the image using the Variance of Laplacian
-    # method
+    # 加载图片，转化成单通道灰度图片，使用opencv拉普拉斯方差算法计算模糊值
     image = cv2.imread(imagePath)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     fm = variance_of_laplacian(gray)
     text = "Not Blurry"
 
-    # if the focus measure is less than the supplied threshold,
-    # then the image should be considered "blurry"
+    # 大于等于阈值（默认100）判定为清晰，小于阈值判定为模糊
     if fm < args["threshold"]:
         text = "Blurry"
 
