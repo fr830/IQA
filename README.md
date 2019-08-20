@@ -5,8 +5,6 @@
 
 分类：清晰（Not Blurry）、模糊（Blurry）
 
-核心代码
-cv2.Laplacian(image, cv2.CV_64F).var()
 
 #  实现效果
 
